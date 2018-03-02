@@ -1,0 +1,11 @@
+<!doctype html>
+<title>RedisConf Day 0 Session Store Training</title>
+{% if sessionvalue %}
+  <h1>Session Value = {{ sessionvalue }}</h1>
+{% else %}
+  <h1>No session value set.</h1>
+{% endif %}
+{% if sessionaction %}
+  <h2>Session action: {{ sessionaction }}</h2>
+{% endif %}
+<em>Served from process at port: {{ port }}</em>
